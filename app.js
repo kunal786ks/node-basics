@@ -255,7 +255,7 @@ server.listen(8000, '127.0.0.1', () => {
 
 //using pipe method
 server.on('request',(req,res)=>{
-    let rs=fs.createReadStream('./files/large-files.txt')
+    let rs=fs.createReadStream('./files/large-file.txt') 
 
     rs.pipe(res);
     //readbale source writeable destination
